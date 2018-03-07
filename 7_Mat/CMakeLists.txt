@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.5)
+PROJECT(Mat)
+SET(SRC_LIST mat.cpp)
+find_package(OpenCV 3.4 REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(mat_show ${SRC_LIST})
+target_link_libraries(mat_show ${OpenCV_LIBS})

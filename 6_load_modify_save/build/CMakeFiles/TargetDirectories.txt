@@ -1,0 +1,3 @@
+/home/yang/opencv_example/load_modify_save/build/CMakeFiles/edit_cache.dir
+/home/yang/opencv_example/load_modify_save/build/CMakeFiles/rebuild_cache.dir
+/home/yang/opencv_example/load_modify_save/build/CMakeFiles/show.dir

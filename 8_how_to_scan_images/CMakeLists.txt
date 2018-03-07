@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.5)
+PROJECT(Scan_images)
+SET(SRC_LIST how_to_scan_images.cpp)
+find_package(OpenCV 3.4 REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(show ${SRC_LIST})
+target_link_libraries(show ${OpenCV_LIBS})
