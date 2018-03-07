@@ -1,0 +1,3 @@
+A demo of tracking objects realtime.
+Device number of my camera is 0 ,so the parameter in VideoCapture is 0:  VideoCapture cap(0) .
+First select the ROI(Region of Interest) by mouse, then push "Enter" to confirm.
