@@ -13,8 +13,8 @@ int main()
 {
     cout << "Built with OpenCV " << CV_VERSION << endl;
     Mat image;
-    VideoCapture capture;
-    capture.open(0);
+    VideoCapture capture(0);
+//    capture.open(0);
     if(capture.isOpened())
     {
         cout << "Capture is opened" << endl;

@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.5)
+PROJECT(erosion_dilation)
+set(SRC_LIST erosion_dilation.cpp)
+find_package(OpenCV 3.4 REQUIRED)
+include_directories(${OPenCV_INCLUDE_DIRS})
+add_executable(show ${SRC_LIST})
+target_link_libraries(show ${OpenCV_LIBS})

@@ -9,20 +9,18 @@ using namespace std;
 using namespace cv;
 
 int main() {  
-    // declares all required variables  
-    //! [vars]  
+    // declares all required variables   
     Rect2d roi;  
-    Mat frame;  
-    //! [vars]  
+    Mat frame;   
   
     // create a tracker object  
     Ptr<Tracker> tracker = TrackerKCF::create();   
     //! [create]  
   
-    // set input video  
-    //! [setvideo]  
+    // set input video   
     //std::string video = "/home/cuoid/kcfDemo/demo1/vtest.avi";  
     //VideoCapture cap(video);
+
     VideoCapture cap(0);
     //! [setvideo]  
   
@@ -30,6 +28,7 @@ int main() {
     //! [getframe]  
     cap >> frame;  
     //! [getframe]  
+
     //! [selectroi]选择目标roi以GUI的形式
     if(!frame.empty()){
         roi=selectROI("tracker",frame);

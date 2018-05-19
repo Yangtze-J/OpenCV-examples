@@ -6,7 +6,7 @@ using namespace cv;
 using namespace std;
 int main( int argc, char** argv )
 {
-//    String imageName( "/home/yang/opencv_example/load_modify_save/lena.jpg" ); // by default
+//    String imageName( "/home/yang/opencv_example/6_load_modify_save/lena.jpg" ); // by default
 //    if( argc > 1)
 //    {
 //        imageName = argv[1];
@@ -25,7 +25,7 @@ int main( int argc, char** argv )
     Mat gray_image;
     cvtColor( image, gray_image, COLOR_BGR2GRAY );
 
-    imwrite( "/home/yang/opencv_example/load_modify_save/Gray_Image.jpg", gray_image );
+    imwrite( "/home/yang/opencv_example/6_load_modify_save/Gray_Image.jpg", gray_image );
 
     namedWindow( "Gray image", WINDOW_AUTOSIZE );
     namedWindow( "Display window", WINDOW_AUTOSIZE ); 

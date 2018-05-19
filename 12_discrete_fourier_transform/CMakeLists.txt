@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.5)
+project(Fourier_transform)
+set(SRC_LIST dft.cpp)
+find_package(OpenCV 3.4 REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(dft ${SRC_LIST})
+target_link_libraries(dft ${OpenCV_LIBS})
