@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.5)
+project(selective_search)
+set(SRC_LIST ss.cpp)
+find_package(OpenCV 3.4 REQUIRED)
+include_directories(${OpenCV_INCLUDE_DIRS})
+add_executable(ss ${SRC_LIST})
+target_link_libraries(ss ${OpenCV_LIBS})
